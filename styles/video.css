@@ -1,0 +1,144 @@
+.thumbnail {
+  width: 100%;
+}
+
+.profile-image {
+  width: 36px;
+  border-radius: 25px;
+}
+
+.profile-div:hover .preview-box-div {
+  opacity: 1;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.thumbnail-div {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.author, 
+.stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.author {
+  margin-bottom: 4px;
+}
+
+.info-grid-div {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.website-grid-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+  .website-grid-div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .website-grid-div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .website-grid-div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .website-grid-div .title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .website-grid-div .author,
+  .website-grid-div .stats {
+    font-size: 14px;
+  }
+}
+
+.video-time {
+  position: absolute;
+  background-color: black;
+  color: white;
+  bottom: 8px;
+  right: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.title-video-link {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.profile-div {
+  position: relative;
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
+}
+
+.preview-box-div {
+  position: absolute;
+  display: flex;
+  width: 190px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: white;
+  font-family: Roboto, Arial;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  top: 45px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100;
+  transition: 0.15s;
+}
+
+.preview-box-profile {
+  width: 48px;
+  border-radius: 24px;
+  margin-right: 7px;
+}
+
+.preview-box-image {
+  height: 48px;
+}
+
+.preview-box-info {
+  display: grid;
+  row-gap: 4px;
+}
+
+.preview-box-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.preview-box-subs {
+  font-size: 12px;
+  color: rgb(70, 70, 70);
+}
